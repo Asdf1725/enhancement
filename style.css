@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka';
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: skyblue;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    font-size: 24px;
+}
+
+section{
+
+  
+    color: white;
+    text-shadow: 0px 0px 3px black;
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding: 100px 0;
+}
+
+section .hero_img{
+    width: 300px;
+}
+
+section .hero_h1{
+    font-size: 50px;
+}
+
+section .hero_p{
+    font-size: 50px;
+}
+
+.hero_left{
+    width: 500px;
+}
+
+
+.btn{
+    /*  top right bottom left 
+        vertical horizontal */
+    padding: 10px 20px;
+
+    /* border corners */
+    border-radius: 16px;
+
+    /* 
+    border-color: red;
+    border-width: 10px;
+    border-style: solid; 
+    */
+
+    /* width style color */
+    border: 5px solid red;
+
+    font-size: 24px;
+    font-weight: bold;
+    /* font-style: italic; */
+    
+    background-color: skyblue;
+    color: white;
+
+
+    /* horizontal vertical  blur color */
+    text-shadow: 0px 0px 3px black;
+    /* box-shadow: 10px 10px 10px black; */
+
+    cursor: pointer;
+
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item{
+    background-color: skyblue;
+    width: 300px;
+    padding: 20px;
+
+
+    text-align: center;
+}
+
+.grid-item img{
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    border: 5px solid red;
+
+    
+    object-position: center;
+    object-fit: cover;
+}
